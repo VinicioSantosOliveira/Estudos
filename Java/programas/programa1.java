@@ -6,6 +6,6 @@ public class programa1{
 
     }
     static void print(){
-        System.out.println("Hello, World");
+        System.out.println("Hello World");
     }
 }
