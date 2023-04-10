@@ -19,9 +19,5 @@ public class ifElse {
             System.out.println();
             i = i + 1;
         }
-
-        Classe classe = new Classe();
-        System.out.println(classe.n);
-
     }
 }

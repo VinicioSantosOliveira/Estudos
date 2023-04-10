@@ -3,7 +3,6 @@ public class programa1{
         
         System.out.println(2+2); //atalho sout
         print();
-
     }
     static void print(){
         System.out.println("Hello World");
