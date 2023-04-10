@@ -11,5 +11,10 @@ public class variaveis {
         System.out.println(numberI);
         System.out.println(numberD + numberD);
         System.out.println(vdd);
+
+        int number; //declarando a variavel
+
+        number = 20;
+        System.out.println(number + 10);
     }
 }
