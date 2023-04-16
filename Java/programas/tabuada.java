@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class ifElse {
+public class tabuada {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);  // cria um objeto Scanner
@@ -17,12 +17,7 @@ public class ifElse {
 
         while ( i <= 5) {
             result = tabuada * i;
-            System.out.print(tabuada);
-            System.out.print("X");
-            System.out.print(i);
-            System.out.print("=");
-            System.out.println(result);
-            System.out.println("--------------");
+            System.out.println(tabuada +"x"+ i +"="+ result);
             i = i + 1;
         }
     }
