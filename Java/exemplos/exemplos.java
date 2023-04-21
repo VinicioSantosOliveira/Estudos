@@ -10,11 +10,17 @@ public class exemplos{
         boolean vdd = true; // vdd e falso
         System.out.println(vdd); //print
 
-        some(5, 2); // passar os valor por parametro
-    }
-    static void some(int a, int b){ // a e b por parametro
+        final double pi = 3.14; //final faz com que o valor da variavel nao possa ser alterado
+        System.out.println(pi);
 
-        System.out.println(a + b); // ln dps de print quebra a linha
-        System.out.print(a - b);
+        byte y = 'b'; //da pra usar pra manipular caracteres ou img
+        byte b = 127; //o byte armazena so ate 127 bytes
+        char c ='c'; //ele armazena so um caracter
+        String caracter = "c"; //armazena caracteres
+        short s = -129; //int (so que com menos espaço)
+        int i = 1234567890; // int
+        long l = 123123123123123L; //int (com mais espaço)
+        float f = 19.19f; //32bit (menor que o double)
+        double d = 19.19; //64bit
     }
 }

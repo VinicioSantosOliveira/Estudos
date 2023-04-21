@@ -11,7 +11,9 @@ public class loop {
             System.out.println(numero);
             i++;
         }
+
         System.out.println("------------------");
+        
         /*while (true){
             int numero = gerador.nextInt(60);
             System.out.println(numero);
