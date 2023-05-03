@@ -28,5 +28,7 @@ public class loop {
             int numero = gerador.nextInt(60);
             System.out.println(numero);
         }*/ //desta forma o for faz o looping infinito;
+
+        //para parar o looping usando uma condiçao se usa break;
     }
 }

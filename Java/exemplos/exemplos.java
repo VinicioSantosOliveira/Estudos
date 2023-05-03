@@ -22,5 +22,7 @@ public class exemplos{
         long l = 123123123123123L; //int (com mais espaço)
         float f = 19.19f; //32bit (menor que o double)
         double d = 19.19; //64bit
+
+        System.out.println(y + b + c + caracter + s + i + l + f + d); //<--remover quando for roda o programa;
     }
 }

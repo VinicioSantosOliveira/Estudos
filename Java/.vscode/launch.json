@@ -1,0 +1,119 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Erros",
+            "request": "launch",
+            "mainClass": "Erros",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "login",
+            "request": "launch",
+            "mainClass": "Login_e_cadastro.login",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "argumentos",
+            "request": "launch",
+            "mainClass": "argumentos",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "casting",
+            "request": "launch",
+            "mainClass": "casting",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "comparandoStrings",
+            "request": "launch",
+            "mainClass": "comparandoStrings",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "condicoes",
+            "request": "launch",
+            "mainClass": "condicoes",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "exemplos",
+            "request": "launch",
+            "mainClass": "exemplos",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "funcao",
+            "request": "launch",
+            "mainClass": "funcao",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "loop",
+            "request": "launch",
+            "mainClass": "loop",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "manipulaString",
+            "request": "launch",
+            "mainClass": "manipulaString",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "oop",
+            "request": "launch",
+            "mainClass": "orientacao_a_objeto.oop",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "programa1",
+            "request": "launch",
+            "mainClass": "programa1",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "recebeClasse",
+            "request": "launch",
+            "mainClass": "recebeClasse",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "tabuada",
+            "request": "launch",
+            "mainClass": "tabuada",
+            "projectName": "Java_3a94b059"
+        },
+        {
+            "type": "java",
+            "name": "variaveis",
+            "request": "launch",
+            "mainClass": "variaveis",
+            "projectName": "Java_3a94b059"
+        }
+    ]
+}
