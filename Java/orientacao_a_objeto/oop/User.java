@@ -1,4 +1,4 @@
-package orientacao_a_objeto;
+package orientacao_a_objeto.oop;
 
 public class User {
 

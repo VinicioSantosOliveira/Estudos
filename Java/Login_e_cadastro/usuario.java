@@ -6,8 +6,10 @@ public class usuario {
     public String primeiroNome;
     public String ultimoNome;
     private String nomeCompleto;
-
-    public String nomeCompleto(){//comportamento
+    public String apelido;
+    
+    //comportamento
+    public String nomeCompleto(){
         return primeiroNome + " " + ultimoNome;   
     }
 }
