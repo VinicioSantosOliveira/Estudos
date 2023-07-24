@@ -5,10 +5,10 @@ void main() {
 
 class Carro { //classe
   final String nomeCarro = "golf";
-  String marcaCarro = "volkswagen";
+  String _marcaCarro = "volkswagen"; //_ serve para torna a variavel privada
   int qtdPortas = 4;
 
   String nomeCompletoCarro() { //funçao
-    return "$marcaCarro $nomeCarro";
+    return "$_marcaCarro $nomeCarro";
   }
 } //uma funçao dentro de uma classe se chama metodo
