@@ -9,7 +9,7 @@ void main() {
   bool isRunnig = true;
 
   while (isRunnig) {
-    print("\x1B[2J\x1B[0;0H"); //serve para limpar
+    //print("\x1B[2J\x1B[0;0H"); //serve para limpar
     print("------------");
     print("    Menu    ");
     print("------------");

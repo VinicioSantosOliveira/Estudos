@@ -9,12 +9,6 @@ void main() {
   print(medico.calculoIMC());
 }
 
-class Medico extends Pessoa{ //extends é a herança da outra classe
-  final crm;
-  
-  Medico({required this.crm, required String name, required double alt, required double peso}): super(nome: name, altura: alt, peso: peso);
-} //super é da classe extends Pessoa para chamar o construtor
-
 class Pessoa {
   final String nome;
   final double altura;
@@ -26,3 +20,9 @@ class Pessoa {
     return peso / (altura * altura);
   }
 }
+
+class Medico extends Pessoa{ //extends é a herança da outra classe
+  final crm;
+  
+  Medico({required this.crm, required String name, required double alt, required double peso}): super(nome: name, altura: alt, peso: peso);
+} //super é da classe extends Pessoa para chamar o construtor
