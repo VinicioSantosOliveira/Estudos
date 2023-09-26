@@ -60,4 +60,8 @@ void main() {
       vitoria: 12,
       derrota: 2,
       empate: 4);
+  
+  lutador4.perderLuta();
+  lutador4.perderLuta();
+  lutador4.status();
 }

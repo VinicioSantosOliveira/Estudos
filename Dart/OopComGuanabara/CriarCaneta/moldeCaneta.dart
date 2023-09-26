@@ -1,15 +1,32 @@
-import 'Caneta.dart';
+class Caneta {
+  late String modelo;
+  late String cor;
+  late double ponta;
+  late int carga;
+  late bool tampada;
 
-void main() {
-  Caneta c1 = new Caneta();
-  c1.modelo = "Bic";
-  c1.cor = "Azul";
-  c1.ponta = 0.5;
-  c1.carga = 50;
-  c1.tampada = false;
+  void rabiscar() {
+    if (this.tampada == true) {
+      print("Pode Rabiscar");
+    } else {
+      print("Erro, nao pode rabiscar");
+    }
+  }
 
-  c1.status();
-  c1.tampar();
-  c1.status();
-  c1.rabiscar();
+  void tampar() {
+    this.tampada = true;
+  }
+
+  void destampar() {
+    this.tampada = false;
+  }
+
+  void status() {
+    print("Modelo: ${this.modelo}");
+    print("Uma caneta ${this.cor}");
+    print("Ponta: ${this.ponta}");
+    print("Carga: ${this.carga}");
+    print("Está tampado? ${this.tampada}");
+  }
+  
 }

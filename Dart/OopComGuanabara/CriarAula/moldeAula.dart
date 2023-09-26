@@ -1,16 +1,33 @@
-import 'Aula.dart';
+class Aula {
+  late String materia;
+  late String professor;
+  late String data;
+  late String horario;
+  late double duracao;
+  late bool aula;
 
-void main() {
-  Aula aula1 = new Aula();
-  aula1.materia = "OOP";
-  aula1.professor = "Guanabara";
-  aula1.data = "17/04";
-  aula1.horario = "12:03";
-  aula1.duracao = 20.37;
-  aula1.aula = true;
+  void status() {
+    print("A materia é ${this.materia}");
+    print("O professor é ${this.professor}");
+    print("O dia é ${this.data}");
+    print("O horario é ${this.horario}");
+    print("A duraçao é de ${this.duracao}");
+    print("A aula esta acontecendo? ${this.aula}");
+  }
 
-  aula1.status();
-  aula1.exercicio();
-  aula1.semAulaHoje();
-  aula1.status();
+  void exercicio() {
+    if (this.aula == true) {
+      print("Faça os exercicios");
+    } else {
+      print("Nao tem aula");
+    }
+  }
+
+  void aulaHoje() {
+    this.aula = true;
+  }
+
+  void semAulaHoje() {
+    this.aula = false;
+  }
 }

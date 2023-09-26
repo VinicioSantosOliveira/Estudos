@@ -1,110 +1,68 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 class Lutador {
-  late String _nome;
-  late String _nacionalidade;
-  late int _idade;
-  late double _altura;
-  late double _peso;
-  late String _categoria;
-  late int _vitorias;
-  late int _derrotas;
-  late int _empates;
+  final String nome;
+  final String nacionalidade;
+  final int idade;
+  final double altura;
+  final double peso;
+  int vitoria;
+  int derrota;
+  int empate;
+  String categoria = "";
 
   Lutador({
-    required String nome,
-    required String nacionalidade,
-    required int idade,
-    required double altura,
-    required double peso,
-    required int vitoria,
-    required int derrota,
-    required int empate,
+    required this.nome,
+    required this.nacionalidade,
+    required this.idade,
+    required this.altura,
+    required this.peso,
+    required this.vitoria,
+    required this.derrota,
+    required this.empate,
   }) {
-    this._nome = "";
-    this._nacionalidade = "";
-    this._idade = 0;
-    this._altura = 0;
-    this._peso = 0;
-    this._vitorias = 0;
-    this._derrotas = 0;
-    this._empates = 0;
+    getCategoria();
   }
 
-  String getNome() {
-    return this._nome;
+  void getCategoria() {
+    if (this.peso <= 52.2) {
+      this.categoria = "Invalido";
+    }
+    else if (this.peso <= 70.3) {
+      this.categoria = "Leve";
+    }
+    else if (this.peso <= 83.9) {
+      this.categoria = "Medio";
+    }
+    else if (this.peso <= 120.2) {
+      this.categoria = "Pesado";
+    } else {
+      this.categoria = "Invalido2";
+    }
   }
-
-  void setNome(String nome) {
-    this._nome = nome;
+  
+  apresentar() {
+    print("Lutador: ${nome}");
+    print("Origem: ${nacionalidade}");
+    print("${idade} anos");
+    print("${altura} m de altura");
+    print("Pesando ${peso} Kg");
+    print("Ganhou ${vitoria}");
+    print("Perdeu ${derrota}");
+    print("Empatou ${empate}");
   }
-
-  String getNacionalidade() {
-    return this._nacionalidade;
+  status() {
+    print(nome);
+    print("é um peso ${categoria}");
+    print("${vitoria} vitorias");
+    print("${derrota} derrotas");
+    print("${empate} empates");
   }
-
-  void setNacionalidade(String nacionalidade) {
-    this._nacionalidade = nacionalidade;
+  ganharLuta() {
+    vitoria += 1;
   }
-
-  int getIdade() {
-    return this._idade;
+  perderLuta() {
+    derrota += 1;
   }
-
-  void setIdade(int idade) {
-    this._idade = idade;
+  empatarLuta() {
+    empate += 1;
   }
-
-  double getAltura() {
-    return this._altura;
-  }
-
-  void setAltura(double altura) {
-    this._altura = altura;
-  }
-
-  double getPeso() {
-    return this._peso;
-  }
-
-  void setPeso(double peso) {
-    this._peso = peso;
-  }
-
-  String getCategoria() {
-    return this._categoria;
-  }
-
-  void setCategoria(String categoria) {
-    this._categoria = categoria;
-  }
-
-  int getVitorias() {
-    return this._vitorias;
-  }
-
-  void setVitorias(int vitorias) {
-    this._vitorias = vitorias;
-  }
-
-  int getDerrotas() {
-    return this._derrotas;
-  }
-
-  void setDerrotas(int derrotas) {
-    this._derrotas = derrotas;
-  }
-
-  int getEmpates() {
-    return this._empates;
-  }
-
-  void setEmpates(int empates) {
-    this._empates = empates;
-  }
-
-  apresentar() {}
-  status() {}
-  ganharLuta() {}
-  perderLuta() {}
-  empatarLuta() {}
 }

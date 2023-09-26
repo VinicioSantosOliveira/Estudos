@@ -1,29 +1,15 @@
-class Teclado {
-  late String marca;
-  late String tipo;
-  late int qtdTeclas;
-  late bool luz;
-  late String cor;
-  late bool ligado;
+import 'MoldeTeclado.dart';
 
-  void status() {
-    print("A marca é ${this.marca}");
-    print("O tipo do teclado é ${this.tipo}");
-    print("A cor do teclado é ${this.cor}");
-    print("quantia de teclas: ${this.qtdTeclas}");
-    print("A iluminaçao do teclado esta ligado? ${this.luz}");
-    print("O teclado esta ligado? ${this.ligado}");
-  }
+void main() {
+  Teclado t1 = new Teclado();
+  t1.marca = "Redragon";
+  t1.qtdTeclas = 30;
+  t1.luz = true;
+  t1.cor = "black";
+  t1.ligado = true;
+  t1.tipo = "switch";
 
-  void escrever() {
-    if (this.ligado == true) {
-      print("O teclado esta ligado, pode digitar");
-    } else {
-      print("O teclado esta desligado, necessario ligar para digitar");
-    }
-  }
-  
-  void apagar() {
-    print("Apagando..");
-  }
+  t1.status();
+  t1.escrever();
+  t1.apagar();
 }

@@ -1,4 +1,4 @@
-import 'classConta.dart';
+import 'Conta.dart';
 
 void main() {
   Conta jose = new Conta(2525, "cc", "Jose");
