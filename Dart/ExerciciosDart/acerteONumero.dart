@@ -3,7 +3,6 @@ import 'dart:math';
 
 void main() {
   int numeroRandon = Random().nextInt(10);
-  print(numeroRandon);
 
   for (var i = 5; i >= 0; i--) {
     print("chute um numero entre 0 e 10: ");
