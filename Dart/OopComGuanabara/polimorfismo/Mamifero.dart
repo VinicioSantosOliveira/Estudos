@@ -17,27 +17,19 @@ class Mamifero extends Animal {
   @override
   void locomover() {
     print("Correndo..");
-    // TODO: implement locomover
-    super.locomover();
   }
 
   @override
   void alimentar() {
     print("Mamando..");
-    // TODO: implement alimentar
-    super.alimentar();
   }
 
   @override
   void emitirSom() {
     print("som de mamifero..");
-    // TODO: implement emitirSom
-    super.emitirSom();
   }
   @override
   void status() {
     print("${this.corPelo}, ${this.peso}, ${this.idade}, ${this.membros}");
-    // TODO: implement status
-    super.status();
   }
 }

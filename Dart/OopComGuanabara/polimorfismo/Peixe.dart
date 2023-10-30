@@ -20,25 +20,17 @@ class Peixe extends Animal {
   @override
   void locomover() {
     print("Nadando");
-    // TODO: implement locomover
-    super.locomover();
   }
   @override
   void alimentar() {
     print("Comendo substancias..");
-    // TODO: implement alimentar
-    super.alimentar();
   }
   @override
   void emitirSom() {
     print("Peixe nao faz som");
-    // TODO: implement emitirSom
-    super.emitirSom();
   }
   @override
   void status() {
     print("${this.corEscama}, ${this.peso}, ${this.idade}, ${this.membros}");
-    // TODO: implement status
-    super.status();
   }
 }
